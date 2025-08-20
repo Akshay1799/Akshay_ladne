@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { Github, ExternalLink, Eye, Code, Smartphone, Globe, Database } from 'lucide-react';
+import {  ExternalLink, Eye, Code, Smartphone, Globe, Database } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { DarkModeContext } from '../App';
 
 const Projects = () => {
@@ -10,28 +11,10 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. Features include user authentication, payment processing, and admin dashboard.',
       image: '🛒',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+      technologies: ['React', 'Tailwind CSS'],
       github: '#',
       live: '#',
       category: 'Full-Stack'
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '📋',
-      technologies: ['React', 'Firebase', 'TypeScript', 'Framer Motion'],
-      github: '#',
-      live: '#',
-      category: 'Frontend'
-    },
-    {
-      title: 'AI Chat Assistant',
-      description: 'An intelligent chatbot powered by OpenAI GPT, featuring natural language processing and context-aware conversations.',
-      image: '🤖',
-      technologies: ['Python', 'OpenAI API', 'Flask', 'React', 'WebSocket'],
-      github: '#',
-      live: '#',
-      category: 'AI/ML'
     },
     {
       title: 'Portfolio Website',
@@ -50,15 +33,6 @@ const Projects = () => {
       github: '#',
       live: '#',
       category: 'Frontend'
-    },
-    {
-      title: 'Blog CMS',
-      description: 'A content management system for blogs with markdown support, SEO optimization, and analytics dashboard.',
-      image: '📝',
-      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-      github: '#',
-      live: '#',
-      category: 'Full-Stack'
     }
   ];
 
@@ -158,7 +132,7 @@ const Projects = () => {
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-gray-900'
                     }`}
                   >
-                    <Github size={16} />
+                    <FaGithub size={16} />
                     Code
                   </a>
                   <a

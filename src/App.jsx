@@ -6,7 +6,7 @@ export const DarkModeContext = createContext();
 function App({ children }) {
   const [darkMode, setDarkMode] = useState(true);
 
-  // Apply dark mode to the entire HTML document
+// Apply dark mode to the entire HTML document
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
